@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    
+}
+
+@model ListDataModel
+
+<div class="row justify-content-center">
+    <div class="col-lg-8 col-md-12 text-center">
+       
+        @using (Html.BeginForm("EntrySubmit", "Home", FormMethod.Post)){
+            @Html.HiddenFor(m => m.ViewPath, new {Value = Model.ViewPath})
+            @Html.HiddenFor(m => m.isMonday, new {Value = Model.isMonday})
+            <div class = "row justify-content-center"> 
+                @Html.TextBoxFor(m => m.Entries, new {type="number", @class="col-12"})
+                @Html.ValidationMessageFor(m => m.Entries, "", new {@class="text-danger"})
+           
+                <input class = "col-3"type="Submit" name="Go" value="Go" />
+             </div>
+        }
+        @Html.Partial(Model.ViewPath, @Model)
+    </div>
+</div>
+
+
+@functions{
+
+}

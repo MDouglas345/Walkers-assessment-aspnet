@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "Step 1";
+}
+
+@model ListDataModel
+
+<div class="row justify-content-center">
+    <div class="col-lg-8 col-md-12 text-center">
+        @for (int i = 1; i <= Model.Entries; i++)
+        {
+            RenderItem(i);
+
+        }
+    </div>
+</div>
+
+@functions {
+    public void RenderItem(int i){
+        if (i % 3 == 0 && i % 5 == 0)
+        {
+            <p><span class="walkers">@Model.Mondayify("walkers") <span class="assessment">@Model.Mondayify("assessment")</span></span></p>
+        }
+        else if (i % 3 == 0)
+        {
+            <p class="walkers">@Model.Mondayify("walkers")</p>
+        }
+        else if (i % 5 == 0)
+        {
+            <p class="assessment">@Model.Mondayify("assessment")</p>
+        }
+        else{
+            <p>@i.ToString()</p>
+        }
+        
+    }
+    public void RenderTest(string test){
+        <p>@test</p>
+    }
+    public string getElementText(int i)
+    {
+        var outputString = "";
+        
+
+        if (i % 3 == 0 && i % 5 == 0)
+        {
+            outputString = "walkers<p class=`assessment`> assessment</p>";
+        }
+        else if (i % 3 == 0)
+        {
+            outputString = "walkers";
+        }
+        else if (i % 5 == 0)
+        {
+            outputString = "assessment";
+        }
+        else
+        {
+            outputString = i.ToString();
+        }
+
+        return outputString;
+    }
+
+    public string getElementClass(int i)
+    {
+        var outputString = "";
+
+        
+        if (i % 3 == 0)
+        {
+            outputString = "walkers";
+        }
+        else if (i % 5 == 0)
+        {
+            outputString = "assessment";
+        }
+        
+
+        return outputString;
+    }
+}
