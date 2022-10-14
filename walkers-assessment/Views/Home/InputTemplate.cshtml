@@ -13,6 +13,7 @@
         @using (Html.BeginForm("EntrySubmit", "Home", FormMethod.Post)){
             @Html.HiddenFor(m => m.ViewPath, new {Value = Model.ViewPath})
             @Html.HiddenFor(m => m.isMonday, new {Value = Model.isMonday})
+            @Html.HiddenFor(m => m.PageOffset, new {Value = Model.PageOffset})
             <div class = "row justify-content-center"> 
                 @Html.TextBoxFor(m => m.Entries, new {type="number", @class="col-12"})
                 @Html.ValidationMessageFor(m => m.Entries, "", new {@class="text-danger"})

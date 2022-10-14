@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "walkers-assessment", "walkers-assessment\walkers-assessment.csproj", "{EC552762-33C9-45E4-95FA-75AA1DDC70EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "walkers-assessment", "walkers-assessment\walkers-assessment.csproj", "{EC552762-33C9-45E4-95FA-75AA1DDC70EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "walkers-assessment-tests", "walkers-assessment-tests\walkers-assessment-tests.csproj", "{D700722B-301C-4F86-B5BE-681EF9180A76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "walkers-assessment-test", "walkers-assessment-test\walkers-assessment-test.csproj", "{EE55D8CF-8CAC-43D9-A716-EB3ADE8CA756}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{EC552762-33C9-45E4-95FA-75AA1DDC70EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC552762-33C9-45E4-95FA-75AA1DDC70EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC552762-33C9-45E4-95FA-75AA1DDC70EF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D700722B-301C-4F86-B5BE-681EF9180A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D700722B-301C-4F86-B5BE-681EF9180A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D700722B-301C-4F86-B5BE-681EF9180A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D700722B-301C-4F86-B5BE-681EF9180A76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE55D8CF-8CAC-43D9-A716-EB3ADE8CA756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE55D8CF-8CAC-43D9-A716-EB3ADE8CA756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE55D8CF-8CAC-43D9-A716-EB3ADE8CA756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE55D8CF-8CAC-43D9-A716-EB3ADE8CA756}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
